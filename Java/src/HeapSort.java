@@ -1,8 +1,8 @@
-public class Ordenacao {
+public class HeapSort {
     private int tamanho;
 
     void maxHeapify(int[] A, int pai) {
-        int esq = 2 * pai + 1;
+        int esq = (2 * pai) + 1;
         int dir = (2 * pai) + 2;
         int maior = pai;
         if (esq <= tamanho && A[esq] > A[maior]) {
